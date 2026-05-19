@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameShelf - Apuntes tácticos</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>🎮 GameShelf</h1>
+        <p>Colección de estrategias y apuntes por videojuego</p>
+
+        <div id="games-list">
+            <h2>🎯 Juegos disponibles</h2>
+            <div id="games-container"></div>
+        </div>
+
+        <div id="notes-section" style="display:none;">
+            <h2>📝 Notas tácticas</h2>
+            <div id="notes-container"></div>
+            <hr>
+            <h3>➕ Agregar nueva nota</h3>
+            <form id="note-form">
+                <input type="text" id="note-title" placeholder="Título de la nota" required>
+                <textarea id="note-content" placeholder="Contenido de la nota..." required></textarea>
+                <label>
+                    <input type="checkbox" id="note-public" checked> Pública
+                </label>
+                <input type="text" id="note-author" placeholder="Tu nombre (opcional)">
+                <button type="submit">Guardar nota</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
